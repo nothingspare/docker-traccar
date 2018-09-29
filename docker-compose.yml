@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  traccar:
+    image: "nothingspare/traccar:latest"
+    volumes:
+      - "./logs:/opt/traccar/logs"
+    ports:
+      - "8000:8000"
+      - "5000-5150:5000-5150"
+      - "5000-5150:5000-5150/udp"
+  db:
+    image: "mysql:5.7"
+    volumes:
+      - "./db:/var/lib/mysql"
+    #restart: $RESTART
+    environment:
+      MYSQL_ROOT_PASSWORD: towclub
+      MYSQL_DATABASE: towclub
+      MYSQL_USER: towclub
+      MYSQL_PASSWORD: towclub
+

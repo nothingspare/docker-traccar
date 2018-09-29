@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+
+<properties>
+
+    <entry key='config.default'>./conf/default.xml</entry>
+
+    <!-- database  -->
+    <entry key='database.driver'>com.mysql.jdbc.Driver</entry>
+    <entry key='database.url'>jdbc:mysql://db:3306/towclub?useSSL=false&amp;allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
+    <entry key='database.user'>towclub</entry>
+    <entry key='database.password'>towclub</entry>
+
+    <!-- web  -->
+    <entry key='web.enable'>true</entry>
+    <entry key='web.port'>8000</entry>
+    <entry key='web.path'>./web</entry>
+    <entry key='web.cacheControl'>max-age=3600,public</entry>
+
+</properties>
